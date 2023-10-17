@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse; /* border - collapse hide the each cells border*/
+            text-align: center; /*This will align all the text inside the table*/
+        }
+        th,td{
+            border: 1px solid black;
+        }
+       tr:nth-child(even){ /* nth-child(even) = apply css styling on even row*/
+        background-color: black;
+       }
+       tr:nth-child(odd){
+        background-color: purple;
+       }
+       th{
+        background-color: aqua;
+       }
+       td{
+        color: white;
+       }
+       
+    </style>
+</head>
+<body style="background-color: grey;">
+    <!-- ek baar heading ko column me set kiya-->
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Country Code</th>
+            <th>Country Mail</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>india@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP</td>
+            <td>japan@google.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>CN</td>
+            <td>china@google.com</td>
+        </tr>
+    </table>
+    <br/>
+    <br/>
+    <!-- ek baar heading ko row me set kiya-->
+    <h3><mark>colspan</mark></h3>
+    <!-- colspan = take spaces in vertical direction with respect to column number -->
+    <table style="width: 40%;">
+        <tr>
+            <th colspan="2">Country
+                <td>India</td>
+                <td>Japan</td>
+                <td>China</td>
+            </th>
+        </tr>
+        <tr>
+            <th>County Code
+                <td>IN</td>
+                <td>JP</td>
+                <td>CN</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Country Mail
+                <td>india@google.com</td>
+                <td>japan@google.com</td>
+                <td>china@google.com</td>
+            </th>
+        </tr>
+    </table>
+    
+    <br/>
+    <br/>
+    <h3><mark>rowspan</mark></h3>
+    <!-- colspan = take spaces in horizontal direction with respect to row number -->
+     <!-- ek baar heading ko row me set kiya-->
+     <table style="width: 40%;">
+        <tr>
+            <th rowspan="2">Country
+                <td>India</td>
+                <td>Japan</td>
+                <td>China</td>
+            </th>
+        </tr>
+        <tr>
+            <th>County Code
+                <td>IN</td>
+                <td>JP</td>
+                <td>CN</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Country Mail
+                <td>india@google.com</td>
+                <td>japan@google.com</td>
+                <td>china@google.com</td>
+            </th>
+        </tr>
+    </table>
+
+</body>
+</html>
