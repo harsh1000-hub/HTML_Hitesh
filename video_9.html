@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class,Id and IFrame</title>
+    <style>
+        #test_id{ /*target the id here by # with id name*/
+            background-color: white;
+        }
+        .test_class{  /*target the class here by .(dot) with class name*/
+            background-color: orange;
+        }
+        table{
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            width: 50%
+        }
+        th{
+            background-color: purple;
+            color: white;
+        }
+
+        body{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+      <p class="test_class">Lorem ipsum dolor sit amet.</p>
+      <p id="test_id">Lorem ipsum dolor sit amet.</p>
+      <!-- In html you have write only one id in one web page and about class write more than one-->
+      <p class="test_class">Lorem ipsum dolor sit.</p>
+    <br/>
+      <!-- assignment on iframe -->
+
+      <table>
+        <tr>
+            <th>Video Title</th>
+            <th>Video</th>
+        </tr>
+        <tr>
+            <td>Database</td>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dl00fOOYLOM?si=2xwBNvUqrgGcArMW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </td>
+        </tr>
+      </table>
+</body>
+</html>
